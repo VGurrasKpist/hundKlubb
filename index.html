@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="grid-container">
+        <div class="side-box"></div>
+        <div class="first box">
+            <h1>Värnamo Brukhundsklubb</h1>
+            <h2>Välkommen till Värnamo Brukhundsklubb</h2>
+            <img src="images/cropped-Brukshundklubben-375996177" alt="" style="float: right; width: 150px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus enim metus, faucibus non faucibus a, vulputate non 
+                arcu. Sed imperdiet viverra ornare. Sed volutpat, tellus quis lacinia efficitur, urna arcu dignissim augue, vel 
+                porta odio quam in nisl. Nullam aliquam neque eu ex vestibulum fringilla. Sed commodo interdum arcu, et sagittis
+                 dui finibus sit amet. Proin ac augue varius ex vulputate feugiat ac non massa. Nam est purus, aliquam in
+                  egestas quis, dapibus et mi. Fusce urna turpis, imperdiet non euismod at, vestibulum ut tortor. In hac 
+                  habitasse platea dictumst. Phasellus dui sapien, viverra in libero a, iaculis ultrices nulla. Ut eget 
+                  interdum tortor. Phasellus sapien est, dignissim in erat et, iaculis auctor massa.</p>
+                  <h3>Regler</h3>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Aenean bibendum odio a felis tristique imperdiet.</li>
+                    <li>Nunc aliquam arcu id fermentum blandit.</li>
+                    <li>Duis placerat dolor ut diam convallis consequat eget bibendum ex.</li>
+                  </ul>
+
+        </div>
+        <div class="side-box"></div>
+        <div class="side-box"></div>
+        <div class="login box">
+          
+          <div id="form">
+              <div class="login">
+                  <div class="login-header">
+                      <h3>LOGIN</h3>
+                      <p id="checklogin">Ange användarnamn och lösenord</p>
+                  </div>
+              </div>
+              <form class="login-form" onsubmit="return false">
+                  <input type="text" id="username" placeholder="användarnamn" />
+                  <input type="password" id="password" placeholder="lösenord" />
+                  <button id="button" onclick="validatelogin()">login</button>
+              </form>
+              <img src="images/th-2586357230" alt="" style="margin-top: 5%;">
+          </div>
+  
+          
+          <div id="signedInDiv">
+              <p id="signedInText"></p>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <button id="btnLogout" onclick="logout()" style="display: none;">logout</button>
+              </div>
+              
+          </div>
+  
+          
+          <div id="wrongPassDiv" style="padding-bottom: 50px;">
+              <p id="wrongPassText" style="text-align: center;"></p>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <button id="btnBack" onclick="location.reload()" style="display: none;" >Back</button>
+              </div>
+              
+          </div>
+      </div>
+        <div class="side-box">
+        </div>
+
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
